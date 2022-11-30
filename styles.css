@@ -1,14 +1,23 @@
 .header-box {
     border: 5px solid greenyellow;
     padding: 20px;
+    background-color:whitesmoke;
+    margin-bottom: 10px;
 }
 
 .left-box {
     border: 5px solid red;
+    width: 40%;
+    margin-right: 40px;
+    margin-left: auto;
+    background-color:whitesmoke;
 }
 
 .right-box {
     border: 5px solid blue;
+    width: 40%;
+    margin-right: auto;
+    background-color:azure;
 }
 
 .righttop-box {
@@ -17,4 +26,12 @@
 
 .rightbottom-box {
     border: 5px solid yellow;
+}
+
+.form {
+    margin: 5px auto;
+}
+
+button {
+    width: 100%;
 }

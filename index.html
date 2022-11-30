@@ -17,12 +17,36 @@
                     <p>Found exciting places to visit on your next vacation? Use the form below to add them to your wishlist</p>
                 </div>
             </div>
+            <div class="container">
             <div class="row">
-                <div class="left-box col-6"></div>
+                <div class="left-box col-6">
+                    <div class="col-9 form">
+                    <form>
+                        <div class="mb-3">
+                            <label for="destinationName" class="form-label">Destination Name</label>
+                            <input type="text" class="form-control" id="destinationName" placeholder="Enter the name of the destination" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Where is it located?" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="photo">Photo</label>
+                            <input type="text" class="form-control" id="photo" placeholder="Enter an image url of the place" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" rows="3" placeholder="Where is it located?"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Add to list</button>
+                    </form>
+                    </div>
+                </div>
                 <div class="right-box col-6">
                     <div class="righttop-box row"></div>
                     <div class="rightbottom-box row"></div>
                 </div>
+            </div>
             </div>
         </div>
 

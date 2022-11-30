@@ -22,10 +22,14 @@
 
 .righttop-box {
     border: 5px solid blueviolet;
+    margin: 5px;
+    padding: 5px;
 }
 
 .rightbottom-box {
     border: 5px solid yellow;
+    margin: 5px;
+    height: 80%;
 }
 
 .form {

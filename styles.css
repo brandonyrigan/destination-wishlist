@@ -1,0 +1,19 @@
+.header-box {
+    border: 5px solid greenyellow;
+}
+
+.left-box {
+    border: 5px solid red;
+}
+
+.right-box {
+    border: 5px solid blue;
+}
+
+.righttop-box {
+    border: 5px solid blueviolet;
+}
+
+.rightbottom-box {
+    border: 5px solid yellow;
+}

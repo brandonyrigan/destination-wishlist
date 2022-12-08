@@ -11,37 +11,37 @@ function loadFormInfo(event) {
     let description = document.getElementById("description");
     let myWishList = document.getElementById("myWishList");
 
-    myWishList.innerText = "My WishList"
+    myWishList.innerText = "My WishList";
 
-    let card = document.createElement('div');
-    card.className = 'card m-2';
+    let card = document.createElement("div");
+    card.className = "card m-2";
     card.style.width = "18rem";
 
     let cardImg = document.createElement("img");
     cardImg.className = "card-img-top";
     cardImg.src = photoUrl.value;
 
-    let cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
+    let cardBody = document.createElement("div");
+    cardBody.className = "card-body";
 
-    let title = document.createElement('h5');
+    let title = document.createElement("h5");
     title.innerText = destinationName.value;
-    title.className = 'card-title';
+    title.className = "card-title";
 
-    let subtitle = document.createElement('h6');
+    let subtitle = document.createElement("h6");
     subtitle.innerText = location.value;
     subtitle.className = "card-subtitle mb-2 text-muted";
 
-    let cardText = document.createElement('p');
-    cardText.className = 'card-text';
+    let cardText = document.createElement("p");
+    cardText.className = "card-text";
     cardText.innerText = description.value;
 
-    let editButton = document.createElement('a');
-    editButton.className = 'btn btn-warning m-2';
+    let editButton = document.createElement("a");
+    editButton.className = "btn btn-warning m-2";
     editButton.innerText = "Edit";
     editButton.addEventListener("click", editCard);
 
-    let removeButton = document.createElement('a');
+    let removeButton = document.createElement("a");
     removeButton.id = "removeButton";
     removeButton.className = "btn btn-danger m-2";
     removeButton.innerText = "Remove";
@@ -70,14 +70,14 @@ function editCard(event) {
     let description = prompt("Enter a new description");
     const parentElement = event.currentTarget.parentElement;
 
-    parentElement.parentElement.children[0].src = photoUrl
+    parentElement.parentElement.children[0].src = photoUrl;
     parentElement.children[0].innerText = destinationName;
     parentElement.children[1].innerText = location;
     parentElement.children[2].innerText = description;
 }
 
 function removeCard(event) {
-    const parentElement = event.target.parentElement;
+    const parentElement = event.target.parentElement.parentElement;
     parentElement.remove();
 
     /*
